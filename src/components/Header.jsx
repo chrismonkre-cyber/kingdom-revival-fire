@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
-const LOGO = "https://media.base44.com/images/public/user_69a2073c194ba1099feee8ab/73cb42250_newlogo.png";
+const LOGO = "https://media.base44.com/images/public/6a1799f21028a2070730409c/629b904f8_newlogo.png";
 const NAV = [
   { label: "Home", to: "/" },
   { label: "Daily", to: "/daily" },
@@ -20,7 +20,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-black/50 border-b border-yellow-700/30">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
         <Link to="/" className="flex items-center gap-2">
-          <img src={LOGO} alt="Kingdom Mandate Ministry" className="h-12 w-12 md:h-14 md:w-14 rounded-full" />
+          <img src={LOGO} alt="Kingdom Mandate Ministry" className="h-10 w-10 md:h-11 md:w-11 rounded-full object-cover" />
           <span className="font-heading text-yellow-300 text-sm md:text-base font-bold hidden sm:block drop-shadow-lg">Kingdom Revival Fire</span>
         </Link>
         <nav className="hidden md:flex gap-1">
