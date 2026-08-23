@@ -27,13 +27,23 @@ export default function Daily() {
       <div className="max-w-3xl mx-auto px-4 pb-16">
         <PageLogo />
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-yellow-300 text-center drop-shadow-lg mb-2" style={{ textShadow: "0 0 30px rgba(255,200,50,0.5)" }}>Daily Revival Word</h1>
-        <p className="text-center text-yellow-100/70 font-body mb-6">Day {idx + 1} of 7</p>
+        <p
+  className="text-center text-yellow-300 font-body font-bold mb-6 mx-auto w-fit px-4 py-2 rounded-lg bg-black/60"
+  style={{ textShadow: "0 2px 6px rgba(0,0,0,0.95)" }}
+>
+  Day {idx + 1} of 7
+</p>
         <div className="flex justify-center gap-4 mb-6">
           <button onClick={() => setIdx(i => (i - 1 + 7) % 7)} className="bg-yellow-600/70 hover:bg-yellow-500/80 text-black p-2 rounded-full transition-colors"><ChevronLeft size={24} /></button>
           <button onClick={() => setIdx(i => (i + 1) % 7)} className="bg-yellow-600/70 hover:bg-yellow-500/80 text-black p-2 rounded-full transition-colors"><ChevronRight size={24} /></button>
         </div>
         <GlassCard>
-          <h2 className="font-heading text-2xl text-yellow-300 font-bold mb-3">{d.title}</h2>
+          <h2
+  className="font-heading text-2xl text-yellow-200 font-bold mb-3"
+  style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}
+>
+  {d.title}
+</h2>
           <div className="space-y-4 font-body text-yellow-100/90 text-sm md:text-base leading-relaxed">
             <div><span className="text-yellow-400 font-bold">Scripture:</span> <em>{d.scripture}</em></div>
             <div><span className="text-yellow-400 font-bold">Encouragement:</span> {d.encouragement}</div>
