@@ -5,7 +5,7 @@ export default function PageBackground({ desktopImg, mobileImg }) {
       <img src={mobileImg} alt="" className="block md:hidden w-full h-full object-cover" />
       <div
   className="absolute inset-0"
-  style={{ background: "rgba(0,0,0,0.65)" }}
+  style={{ background: "rgba(0,0,0,0.80)" }}
 />
     </div>
   );
