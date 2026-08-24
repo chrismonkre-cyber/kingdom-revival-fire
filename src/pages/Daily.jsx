@@ -28,8 +28,13 @@ export default function Daily() {
         <PageLogo />
         <h1 className="font-heading text-3xl md:text-5xl font-bold text-yellow-300 text-center drop-shadow-lg mb-2" style={{ textShadow: "0 0 30px rgba(255,200,50,0.5)" }}>Daily Revival Word</h1>
         <p
-  className="text-center text-yellow-300 font-body font-bold mb-6 mx-auto w-fit px-4 py-2 rounded-lg bg-black/60"
-  style={{ textShadow: "0 2px 6px rgba(0,0,0,0.95)" }}
+  className="text-center font-body font-bold mb-6 mx-auto w-fit px-5 py-2 rounded-lg"
+  style={{
+  color: "#FFD85A",
+  background: "rgba(10,0,2,0.85)",
+  textShadow: "0 2px 5px rgba(0,0,0,1)",
+  border: "1px solid rgba(255,216,90,0.45)"
+}}
 >
   Day {idx + 1} of 7
 </p>
@@ -38,9 +43,12 @@ export default function Daily() {
           <button onClick={() => setIdx(i => (i + 1) % 7)} className="bg-yellow-600/70 hover:bg-yellow-500/80 text-black p-2 rounded-full transition-colors"><ChevronRight size={24} /></button>
         </div>
         <GlassCard>
-          <h2
-  className="font-heading text-2xl text-yellow-200 font-bold mb-3"
-  style={{ textShadow: "0 3px 8px rgba(0,0,0,0.95)" }}
+  <h2
+  className="font-heading text-2xl font-bold mb-3"
+  style={{
+    color: "#FFF2B8",
+    textShadow: "0 3px 5px rgba(0,0,0,1), 0 0 12px rgba(0,0,0,0.9)"
+  }}
 >
   {d.title}
 </h2>
